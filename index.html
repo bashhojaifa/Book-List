@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Listing</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <nav id="navbar">
+        <h1>Book List</h1>
+        <ul>
+          <li><a href="#" data-page="home">Home</a></li>
+          <li><a href="#" data-page="wishlist">Wishlist</a></li>
+        </ul>
+      </nav>
+      <div id="search-container">
+        <input type="text" id="search-input" placeholder="Search books..." />
+        <select id="genre-filter">
+          <option value="">All Genres</option>
+        </select>
+      </div>
+      <div id="book-list"></div>
+      <div id="pagination"></div>
+    </div>
+    <div id="book-details" class="modal hidden">
+      <div class="modal-content">
+        <button class="close-button">&times;</button>
+        <div class="book-details-layout">
+          <img id="book-details-image" src="" alt="Book Image" />
+          <div id="book-details-content"></div>
+        </div>
+      </div>
+    </div>
+    <div id="loading-spinner" class="hidden"></div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
